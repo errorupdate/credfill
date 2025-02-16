@@ -1,0 +1,123 @@
+<!-- Combined Newsletter Section -->
+<div class="newsletter-section">
+    <h4 class="newsletter-title">Subscribe to Our Newsletter</h4>
+    <p class="newsletter-text">Get updates about our latest news & deals.</p>
+    <form id="newsletterForm" class="newsletter-form">
+      <div class="input-wrapper">
+        <input type="email" name="email_address" placeholder="Enter your email address" required class="newsletter-input">
+        <button type="submit" class="newsletter-button">Subscribe</button>
+      </div>
+    </form>
+  </div>
+  
+  <div id="popupMessage" class="popup-message" style="display: none;"></div>
+  
+  <script>
+  document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var email = document.querySelector('input[name="email_address"]').value;
+    var formData = new FormData();
+    formData.append('email_address', email);
+  
+    fetch('subscribe.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      var popupMessage = document.getElementById('popupMessage');
+      popupMessage.textContent = data.message;
+      popupMessage.style.backgroundColor = data.status === 'success' ? '#4CAF50' : '#f44336';
+      popupMessage.style.display = 'block';
+      
+      setTimeout(function() {
+        popupMessage.style.display = 'none';
+      }, 3000);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  });
+  </script>
+  
+  <style>
+  .newsletter-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    margin-top: 3rem;
+  }
+  
+  .newsletter-title {
+    color: #111;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .newsletter-text {
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .newsletter-input {
+    flex: 1;
+    max-width: 400px;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    height: 60px;
+  }
+  
+  .newsletter-button {
+    padding: 0 2rem;
+    background-color: #757ed1;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 60px;
+    width: 200px;
+  }
+  
+  .popup-message {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 16px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .input-wrapper {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .newsletter-input,
+    .newsletter-button {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  </style>
+  

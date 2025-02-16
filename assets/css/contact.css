@@ -1,0 +1,45 @@
+.section:nth-child(1){
+    padding-block-start: calc(var(--section-padding) - 10px);
+    margin: 0;
+}
+.hero-title{
+    text-align: center;
+}
+
+.contact-form{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.form-group label{
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.input-field{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border 0.1s ease-in-out;
+}
+.input-field:focus{
+    border: 2px solid #007bff;
+    outline: none;
+}
+textarea.input-field{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border 0.1s ease-in-out;
+    resize: none;
+}
+

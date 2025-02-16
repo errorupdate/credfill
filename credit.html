@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlock Your Financial Future with Flexible Loan Options | CredFill</title>
+  <meta name="title" content="CredFill">
+  <meta name="description" content="Reach out to us for hassle free Tax & Credit experience">
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/services.css">
+
+  <style>
+    /* Hero Section Styles */
+    .hero-content {
+      text-align: center;
+      color: #ffffff;
+      padding: 5px;
+    }
+    
+    .hero-subtitle {
+      color: #ffffff;
+      margin-top: 15px;
+      font-size: 2rem; /* Increased font size */
+      
+    }
+
+    /* Why Choose Us Section */
+    .why-choose-us {
+      padding: 30px 20px;
+      background: #f8f9fa;
+      font-size: 2.5rem;
+      text-align: center; /* Centered heading */
+    }
+
+    .points-list {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 5px;
+    }
+
+    .point-item {
+      margin: 15px 0;
+      padding: 10px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-weight: bold; /* Bold font for reasons */
+      font-size: 1.7rem; /* Increased font size */
+    }
+
+    /* Credit Health Section */
+.credit-health {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.credit-health h2 {
+  font-size: 3.5rem;
+}
+.credit-health p {
+  font-size: 1.75rem;
+}
+
+
+    .cta-button {
+      background: #fff;
+      color: #6366f1;
+      padding: 15px 30px;
+      border-radius: 25px;
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+   /* Loan Categories Section */
+.loan-categories {
+  padding: 60px 20px;
+  background: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.loan-grid {
+  display: grid;
+  gap: 20px;
+  /* Desktop layout: 6 columns */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.loan-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.loan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.loan-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.loan-card h3 {
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+  .loan-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+  .loan-grid {
+    grid-template-columns: repeat(2, 1fr) !important; /* Force 2 columns */
+    grid-auto-rows: auto; /* Allow automatic row sizing */
+    grid-template-rows: unset; /* Remove fixed row template */
+    width: 100%; /* Ensure full width */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .loan-card {
+    min-width: 0; /* Prevent overflow */
+    width: 100%; /* Ensure cards take full width of their grid cell */
+  }
+  
+  .loan-card img {
+    height: 100px;
+  }
+  
+  .loan-card h3 {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/* Small Mobile Breakpoint */
+@media (max-width: 480px) {
+  .loan-categories {
+    padding: 40px 15px;
+  }
+  
+  .loan-grid {
+    gap: 15px;
+  }
+}
+
+
+    /* Partners Section */
+.our-partners {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 3.3rem; /* Increased title size */
+  font-weight: bold;
+  margin-bottom: 40px; /* Added space below the title */
+}
+
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.partner {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px; /* Uniform width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner img {
+  max-width: 100px; /* Uniform logo size */
+  max-height: 100px; /* Ensures logos fit within container */
+  object-fit: contain; /* Maintain logo aspect ratio */
+}
+
+.partner-name {
+  font-size: 1.5rem; /* Larger font size for partner name */
+  font-weight: bold; /* Bold text for emphasis */
+  margin-top: 10px; /* Space between logo and name */
+}
+
+.partner-note {
+  font-weight: normal;
+  font-size: 1.7rem; /* Larger font size for emphasis */
+  margin-top: 30px; /* Space above note */
+  color: #333; /* Slightly darker text */
+}
+
+
+
+    /* Call-to-Action Buttons Container */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  flex-wrap: wrap; /* Allows buttons to wrap on very small screens */
+}
+
+/* Common Button Styles */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  min-width: 160px;
+}
+
+/* Get a Call Button */
+.call-btn {
+  background-color: #6366f1;
+  color: white;
+}
+
+.call-btn:hover {
+  background-color: #4f46e5;
+  transform: translateY(-2px);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  transform: translateY(-2px);
+}
+
+/* Icon Styling */
+.cta-btn i {
+  margin-right: 8px;
+  font-size: 1.1em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .cta-buttons {
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .cta-btn {
+    padding: 12px 25px;
+    min-width: 140px;
+    font-size: 0.95em;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo-light.png" width="140" height="60" alt="CredFill home" class="logo-light">
+
+        <img src="./assets/images/logo-dark.svg" width="140" height="60" alt="CredFill home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo-light.png" width="140" height="60" alt="CredFill home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="bdservices.html" class="navbar-link">Compliance</a>
+          </li>
+
+          <li>
+            <a href="credit.html" class="navbar-link">Loans </a>
+          </li>
+
+          <li>
+            <a href="https://credfill.in/" class="navbar-link">Tax Refunds</a>
+          </li>
+          
+          <li>
+            <a href="blogs.html" class="navbar-link">Blogs</a>
+          </li>
+          
+          <li>
+            <a href="contact.html" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+
+      </nav>
+
+      <a href="tel:+91 9472194303" class="btn btn-primary">Talk to Us!</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="h1 hero-title">Unlock Your Dreams with the Right Loan</h1>
+          <p class="hero-subtitle">Explore Flexible Loan Options Tailored to Your Needs</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us for Loans</h2>
+        <div class="points-list">
+          <div class="point-item">Comprehensive loan solutions under one platform eliminate the need for multiple visits.</div>
+          <div class="point-item">Comparison from multiple lenders ensures the lowest interest rates.</div>
+          <div class="point-item">Access to multiple lenders provides a range of options to choose the best loan.</div>
+          <div class="point-item">Approval options even with low credit scores ensure accessibility for everyone.</div>
+          <div class="point-item">No hidden fees or extra charges guarantee complete transparency.</div>
+          <div class="point-item">High loan approval rates offer confidence and reliability.</div>
+          <div class="point-item">Streamlined process saves time with minimal documentation and quick approvals.</div>
+          <div class="point-item">Tailored repayment plans provide flexibility to suit individual needs.</div>
+          <div class="point-item">Collaborations with trusted financial institutions ensure credibility.</div>
+          <div class="point-item">Dedicated support team assists throughout the loan application process.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credit Health Section -->
+<section class="credit-health">
+  <div class="container">
+    <h2>Know Your Credit Health</h2>
+    <p>Understanding your CIBIL score is the first step to securing the best loan options. A good credit score can help you get better interest rates and faster approvals.</p>
+    <p>Take control of your financial future today!</p>
+    <a href="subpage/404.html" class="cta-button">Check Your CIBIL Score for Free</a>
+  </div>
+</section>
+
+
+    <!-- Partners Section -->
+<section class="our-partners">
+  <div class="container">
+    <h2 class="section-title">Our Lending Partners</h2>
+    <div class="partners-grid">
+      <div class="partner">
+        <img src="assets/images/a2.jpg" alt="IDFC First Bank Logo">
+        <p class="partner-name"><strong>IDFC First Bank</strong></p>
+      </div>
+      <div class="partner" style="display: none;">
+        <img src="assets/images/a5.png" alt="Bihar State Cooperative Bank Logo">
+        <p class="partner-name"><strong>Bihar State Cooperative Bank Limited</strong></p>
+      </div>
+      <div class="partner" style="display: none;">
+        <img src="assets/images/a4.png" alt="BOI Logo">
+        <p class="partner-name"><strong>Bank of India</strong></p>
+      </div>
+    </div>
+    <p class="partner-note">We’re just getting started, but already, we’re building a platform where you can access a variety of trusted lenders all in one place. No more wasting time going from one bank to the next. As we continue to onboard new partners, our lending network is growing rapidly, ensuring loans are accessible to everyone. Stay connected with us as we reshape the lending experience in India!</p>
+  </div>
+</section>
+
+
+    <!-- Loan Categories Section -->
+<section class="loan-categories">
+  <div class="container">
+    <h2 class="section-title">Explore Our Loan Categories</h2>
+    <div class="loan-grid">
+      <a href="../subpage/home-loan.html" class="loan-card">
+        <img src="assets/images/home-loan.jpg" alt="Home Loan">
+        <h3>Home Loans</h3>
+      </a>
+      <a href="../subpage/car-loan.html" class="loan-card">
+        <img src="assets/images/car-loan.jpg" alt="Car Loan">
+        <h3>Car Loans</h3>
+      </a>
+      <a href="../subpage/commercial-vehicle-loan.html" class="loan-card">
+        <img src="assets/images/commercial-vehicle-loan.jpg" alt="Commercial Vehicle Loan">
+        <h3>Commercial Vehicle Loans</h3>
+      </a>
+      <a href="../subpage/404.html" class="loan-card">
+        <img src="assets/images/gold-loan.jpg" alt="Gold Loan">
+        <h3>Gold Loan</h3>
+      </a>
+      <a href="../subpage/business-loan.html" class="loan-card">
+        <img src="assets/images/business-loan.jpg" alt="Business Loan">
+        <h3>Business Loans</h3>
+      </a>
+      <a href="../subpage/bike-loan.html" class="loan-card">
+        <img src="assets/images/bike-loan.jpg" alt="Bike Loan">
+        <h3>Bike Loans</h3>
+      </a>
+      <a href="../subpage/personal-loan.html" class="loan-card">
+        <img src="assets/images/personal-loan.jpg" alt="Personal Loan">
+        <h3>Personal Loans</h3>
+      </a>
+      <a href="../subpage/loan-against-property.html" class="loan-card">
+        <img src="assets/images/loan-against-property.jpg" alt="Loan Against Property">
+        <h3>Loan Against Properties</h3>
+      </a>
+      <a href="../subpage/404.html" class="loan-card">
+        <img src="assets/images/loan-against-securities.jpg" alt="Loan Against Securities">
+        <h3>Loan Against Securities</h3>
+      </a>
+      <a href="../subpage/agricultural-loan.html" class="loan-card">
+        <img src="assets/images/agricultural-loan.jpg" alt="Agricultural Loan">
+        <h3>Agricultural Loans</h3>
+      </a>
+      <a href="../subpage/short-term-business-loan.html" class="loan-card">
+        <img src="assets/images/short-term-business-loan.jpg" alt="Short Term Business Loan">
+        <h3>Short Term Business Loan</h3>
+      </a>
+      <a href="../subpage/loan-balance-transfer.html" class="loan-card">
+        <img src="assets/images/loan-balance-transfer.jpg" alt="Loan Balance Transfer">
+        <h3>Loan Balance Transfer</h3>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Call-to-Action Buttons -->
+<div class="cta-buttons">
+  <a href="contact.html" class="cta-btn call-btn">
+    <i class="fas fa-phone"></i>
+    Get a Call
+  </a>
+  <a href="https://wa.me/919472194303" class="cta-btn whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+    WhatsApp Us!
+  </a>
+</div>
+
+  <!-- Footer Section -->
+  <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Want to know more, get in touch with us.
+          </h2>
+
+          <a href="tel:+91 9472194303" class="btn btn-primary">Contact Us!</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <!-- Branding Section -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo-light.png" width="140" height="60" alt="CredFill home">
+        </a>
+        <p class="footer-text">&copy; 2025 CredFill. <br> All rights reserved.</p>
+        <ul class="social-list">
+          <li><a href="https://www.facebook.com/CredFill.in/" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://twitter.com/credfill_" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="https://www.linkedin.com/company/credfill/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/credfill/" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://www.youtube.com/@CredFill" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+      </div>
+
+      <!-- Get in Touch Section -->
+      <div class="footer-section">
+        <h4 class="footer-title">Get in Touch</h4>
+        <div class="footer-content">
+          <p class="footer-text">CredFill Pvt. Ltd. <br> CIN: U72200BR2022PTC058748</p>
+          <address class="address.footer-text">24, Jagjiwan Ln, Lohanipur, Rajendra Nagar, Patna, Bihar,India, 800003</address>
+          <a href="mailto:info@credfill.com" class="footer-link">info@credfillcom</a>
+          <a href="tel:+91 9472194303" class="footer-link">+91 9472194303</a>
+        </div>
+      </div>
+
+      <!-- Blogs Section -->
+      <div class="footer-section">
+        <h4 class="footer-title">Blogs</h4>
+        <div class="footer-content">
+          <a href="blogs.html" class="footer-link">Latest Posts</a>
+          <a href="ask-question.html" class="footer-link">Ask a Question</a>
+        </div>
+      </div>
+
+      <!-- Learn More Section -->
+      <div class="footer-section">
+        <h4 class="footer-title">Learn More</h4>
+        <div class="footer-content">
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="careers.html" class="footer-link">Careers</a>
+          <a href="llm.html" class="footer-link maintenance">Finance AI Assistant<span class="maintenance-badge">Under Maintenance</span></a>
+          <a href="tnc.html" class="footer-link">Terms of Use</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        </div>
+      </div>
+
+      <!-- Our Services Section -->
+      <div class="footer-section">
+        <h4 class="footer-title">Our Services</h4>
+        <div class="footer-content">
+          <a href="bdservices.html" class="footer-link">Business Documentation</a>
+          <a href="credit.html" class="footer-link">Credit/Loans </a>
+          <a href="https://credfill.in/" class="footer-link">Instant Tax Refund</a>
+        </div>
+      </div>
+    </div>
+
+<!-- Newsletter Section -->
+<div class="newsletter-section">
+  <h4 class="newsletter-title">Subscribe to Our Newsletter</h4>
+  <p class="newsletter-text">Get updates about our latest news & deals.</p>
+  <form id="newsletterForm" class="newsletter-form">
+    <div class="input-wrapper">
+      <input type="email" name="email_address" placeholder="Enter your email address" required class="newsletter-input">
+      <button type="submit" class="newsletter-button">Subscribe</button>
+    </div>
+  </form>
+</div>
+
+<!-- Popup Message (Initially Hidden) -->
+<div id="popupMessage" class="popup-message" style="display: none;"></div>
+
+<script>
+document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+
+  var email = document.querySelector('input[name="email_address"]').value;
+
+  var formData = new FormData();
+  formData.append('email_address', email);
+
+  // Use fetch to send data to subscribe.php
+  fetch('subscribe.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json()) // Expect a JSON response
+  .then(data => {
+    var popupMessage = document.getElementById('popupMessage');
+
+    // Set the message based on the response
+    popupMessage.textContent = data.message;
+
+    if (data.status === 'success') {
+      popupMessage.style.backgroundColor = '#4CAF50'; // Green for success
+    } else {
+      popupMessage.style.backgroundColor = '#f44336'; // Red for error
+    }
+
+    // Show the message
+    popupMessage.style.display = 'block';
+
+    // Hide the message after 2 seconds
+    setTimeout(function() {
+      popupMessage.style.display = 'none';
+    }, 3000);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+});
+</script>
+
+<style>
+/* Popup message styling */
+.popup-message {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 16px;
+}
+</style>
+<style>
+.footer-link.maintenance {
+    display: none;
+}
+</style>
+
+<style>
+.footer {
+  background-color: #343E51;
+  color: #ffffff;
+  padding: 60px 0 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Brand Section */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo img {
+  max-width: 140px;
+  height: auto;
+}
+
+.social-list {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.social-link:hover {
+  background-color: #757ed1;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  color: #C9C9C9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #757ed1;
+}
+
+.footer-text {
+  color: #C9C9C9;
+  line-height: 1.6;
+  margin: 0;
+  display: inline;
+}
+
+/* Maintenance Badge */
+.maintenance {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.maintenance-badge {
+  font-size: 12px;
+  padding: 2px 6px;
+  background-color: #757ed1;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+
+.newsletter-text {
+  color: #939393;
+  margin-bottom: 25px;
+}
+
+.newsletter-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.newsletter-input::placeholder {
+  color: #939393;
+}
+
+.newsletter-button {
+  padding: 12px 30px;
+  background-color: #757ed1;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+  background-color: #5a64b8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    text-align: left;
+  }
+
+  .social-list {
+    justify-content: left;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+}
+</style>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unlock Your Potential at CredFill | Join Our Team</title>
+  <meta name="title" content="CredFill">
+  <meta name="description" content="Reach out to us for hassle free Tax & Credit experience">
+  <link rel="shortcut icon" href="./favicon.png" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/services.css">
+
+  <style>
+   /* Global Styles */
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section Styles */
+.hero-content {
+  text-align: center;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.hero-subtitle {
+  color: #ffffff;
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+/* Job Openings Section */
+.job-openings {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.job-opening {
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.job-opening:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Core Values Section */
+.core-values {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.core-values-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.value-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Team Section */
+.team-section {
+  padding: 4rem 0;
+}
+
+.team-grid {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-left: 10%; /* Align with section title */
+  padding-right: 10%; /* Balance the layout */
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 250px; /* Increased image size */
+  height: 250px; /* Increased image size */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Perks Section */
+.perks {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.perks-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.perk-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Conclusion Section */
+.conclusion {
+  padding: 4rem 0;
+}
+
+.conclusion-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10%; /* Added equal padding on both sides */
+  text-align: left;
+}
+
+.conclusion p {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.conclusion a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    padding-left: 5%; /* Adjusted left padding for mobile */
+  }
+
+  .job-openings {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .core-values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid for mobile */
+    padding-left: 5%; /* Match section title padding */
+    padding-right: 5%; /* Equal padding on both sides */
+  }
+
+  .team-member img {
+    width: 200px; /* Adjusted for mobile */
+    height: 200px;
+  }
+
+  .perks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .conclusion-content {
+    padding: 0 5%; /* Adjusted padding for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .job-openings {
+    grid-template-columns: 1fr;
+  }
+
+  .core-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+  </style>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo-light.png" width="140" height="60" alt="CredFill home" class="logo-light">
+
+        <img src="./assets/images/logo-dark.svg" width="140" height="60" alt="CredFill home" class="logo-dark">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo-light.png" width="140" height="60" alt="CredFill home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="bdservices.html" class="navbar-link">Compliance</a>
+          </li>
+
+          <li>
+            <a href="credit.html" class="navbar-link">Loans </a>
+          </li>
+
+          <li>
+            <a href="https://credfill.in/" class="navbar-link">Tax Refunds</a>
+          </li>
+          
+          <li>
+            <a href="blogs.html" class="navbar-link">Blogs</a>
+          </li>
+          
+          <li>
+            <a href="contact.html" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+
+      </nav>
+
+      <a href="tel:+91 9472194303" class="btn btn-primary">Talk to Us!</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section has-bg-image" aria-label="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="h1 hero-title">Ready to Create Something Big and Impactful?</h1>
+          <p class="hero-subtitle">We are a young and passionate startup with a clear vision to revolutionize the Indian financial landscape. Agile and innovative, we think fast, iterate quickly, and execute with purpose. Join us on this journey to create meaningful change and shape the future of finance in India. Let’s build something impactful together.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Job Openings Section -->
+  <section class="job-openings">
+    <a href="#" class="job-opening">
+      <h3>Partnership & Alliances</h3>
+      <p>Explore opportunities to work with us as a partner.</p>
+    </a>
+    <a href="#" class="job-opening">
+      <h3>Work as Partner</h3>
+      <p>Collaborate with us to grow your business.</p>
+    </a>
+    <a href="#" class="job-opening">
+      <h3>Sales</h3>
+      <p>Join our sales team and help us expand our reach.</p>
+    </a>
+    <a href="#" class="job-opening">
+      <h3>Tech</h3>
+      <p>Contribute to our technology innovations.</p>
+    </a>
+    <a href="#" class="job-opening">
+      <h3>Customer Support</h3>
+      <p>Help our customers with their financial needs.</p>
+    </a>
+    <a href="#" class="job-opening">
+      <h3>New Openings</h3>
+      <p>Check for the latest job opportunities.</p>
+    </a>
+  </section>
+
+  <!-- Core Values Section -->
+  <section class="core-values">
+    <h2 class="section-title">Our Core Values</h2>
+    <div class="core-values-grid">
+      <div class="value-item">Integrity</div>
+      <div class="value-item">Innovation</div>
+      <div class="value-item">Customer-Centric</div>
+      <div class="value-item">Teamwork</div>
+      <div class="value-item">Continuous Learning</div>
+      <div class="value-item">Transparency</div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h2 class="section-title">People at CredFill</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="assets/images/peopleatcf1.jpg" alt="Team Member 1">
+        <h3></h3>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/peopleatcf2.jpg" alt="Team Member 2">
+        <h3></h3>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/peopleatcf3.jpg" alt="Team Member 3">
+        <h3></h3>
+      </div>
+      <div class="team-member">
+        <img src="assets/images/peopleatcf4.jpg" alt="Team Member 4">
+        <h3></h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perks Section -->
+  <section class="perks">
+    <h2 class="section-title">Perks of Working with Us</h2>
+    <div class="perks-grid">
+      <div class="perk-item">Competitive Salary</div>
+      <div class="perk-item">Flexible Work Hours</div>
+      <div class="perk-item">Comprehensive Health Insurance</div>
+      <div class="perk-item">Personal Development Opportunities</div>
+      <div class="perk-item">Team Building Activities</div>
+      <div class="perk-item">Retirement Benefits</div>
+    </div>
+  </section>
+
+  <!-- Conclusion Section -->
+  <section class="conclusion">
+    <h2 class="section-title">Join Our Team</h2>
+    <div class="conclusion-content">
+      <p>At CredFill, we're more than just a workplace – we're a community of innovators, problem-solvers, and changemakers dedicated to transforming India's financial landscape.</p>
+      <p>We believe in fostering a culture of creativity, collaboration, and continuous growth. Our team members enjoy not just competitive compensation and benefits, but also the opportunity to make a real impact in the lives of millions.</p>
+      <p>We're always looking for passionate individuals who share our vision and values. Whether you're an experienced professional or just starting your career, there might be a perfect role waiting for you at CredFill.</p>
+      <p>If you're excited about the prospect of joining our dynamic team and contributing to our mission, we'd love to hear from you. Share your resume with us at <a href="mailto:career@credfill.com">career@credfill.com</a></p>
+      <p>Join us in our journey to revolutionize the financial services industry and create meaningful change.</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+<!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Want to know more, get in touch with us.
+          </h2>
+
+          <a href="tel:+91 9472194303" class="btn btn-primary">Contact Us!</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <!-- Branding Section -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo-light.png" width="140" height="60" alt="CredFill home">
+        </a>
+        <p class="footer-text">&copy; 2025 CredFill. <br> All rights reserved.</p>
+        <ul class="social-list">
+          <li><a href="https://www.facebook.com/CredFill.in/" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https://twitter.com/credfill_" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="https://www.linkedin.com/company/credfill/" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="https://www.instagram.com/credfill/" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          <li><a href="https://www.youtube.com/@CredFill" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+      </div>
+
+      <!-- Get in Touch Section -->
+      <div class="footer-section">
+        <h4 class="footer-title">Get in Touch</h4>
+        <div class="footer-content">
+          <p class="footer-text">CredFill Pvt. Ltd. <br> CIN: U72200BR2022PTC058748</p>
+          <address class="address.footer-text">24, Jagjiwan Ln, Lohanipur, Rajendra Nagar, Patna, Bihar,India, 800003</address>
+          <a href="mailto:info@credfill.com" class="footer-link">info@credfillcom</a>
+          <a href="tel:+91 9472194303" class="footer-link">+91 9472194303</a>
+        </div>
+      </div>
+
+      <!-- Blogs Section -->
+      <div class="footer-section">
+        <h4 class="footer-title">Blogs</h4>
+        <div class="footer-content">
+          <a href="blogs.html" class="footer-link">Latest Posts</a>
+          <a href="ask-question.html" class="footer-link">Ask a Question</a>
+        </div>
+      </div>
+
+      <!-- Learn More Section -->
+      <div class="footer-section">
+        <h4 class="footer-title">Learn More</h4>
+        <div class="footer-content">
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="careers.html" class="footer-link">Careers</a>
+          <a href="llm.html" class="footer-link maintenance">Finance AI Assistant<span class="maintenance-badge">Under Maintenance</span></a>
+          <a href="tnc.html" class="footer-link">Terms of Use</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        </div>
+      </div>
+
+      <!-- Our Services Section -->
+      <div class="footer-section">
+        <h4 class="footer-title">Our Services</h4>
+        <div class="footer-content">
+          <a href="bdservices.html" class="footer-link">Business Documentation</a>
+          <a href="credit.html" class="footer-link">Credit/Loans </a>
+          <a href="https://credfill.in/" class="footer-link">Instant Tax Refund</a>
+        </div>
+      </div>
+    </div>
+
+<!-- Newsletter Section -->
+<div class="newsletter-section">
+  <h4 class="newsletter-title">Subscribe to Our Newsletter</h4>
+  <p class="newsletter-text">Get updates about our latest news & deals.</p>
+  <form id="newsletterForm" class="newsletter-form">
+    <div class="input-wrapper">
+      <input type="email" name="email_address" placeholder="Enter your email address" required class="newsletter-input">
+      <button type="submit" class="newsletter-button">Subscribe</button>
+    </div>
+  </form>
+</div>
+
+<!-- Popup Message (Initially Hidden) -->
+<div id="popupMessage" class="popup-message" style="display: none;"></div>
+
+<script>
+document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+
+  var email = document.querySelector('input[name="email_address"]').value;
+
+  var formData = new FormData();
+  formData.append('email_address', email);
+
+  // Use fetch to send data to subscribe.php
+  fetch('subscribe.php', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json()) // Expect a JSON response
+  .then(data => {
+    var popupMessage = document.getElementById('popupMessage');
+
+    // Set the message based on the response
+    popupMessage.textContent = data.message;
+
+    if (data.status === 'success') {
+      popupMessage.style.backgroundColor = '#4CAF50'; // Green for success
+    } else {
+      popupMessage.style.backgroundColor = '#f44336'; // Red for error
+    }
+
+    // Show the message
+    popupMessage.style.display = 'block';
+
+    // Hide the message after 2 seconds
+    setTimeout(function() {
+      popupMessage.style.display = 'none';
+    }, 3000);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
+});
+</script>
+
+<style>
+/* Popup message styling */
+.popup-message {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 16px;
+}
+</style>
+<style>
+.footer-link.maintenance {
+    display: none;
+}
+</style>
+
+<style>
+.footer {
+  background-color: #343E51;
+  color: #ffffff;
+  padding: 60px 0 40px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* Brand Section */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo img {
+  max-width: 140px;
+  height: auto;
+}
+
+.social-list {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.social-link:hover {
+  background-color: #757ed1;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  color: #C9C9C9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #757ed1;
+}
+
+.footer-text {
+  color: #C9C9C9;
+  line-height: 1.6;
+  margin: 0;
+  display: inline;
+}
+
+/* Maintenance Badge */
+.maintenance {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.maintenance-badge {
+  font-size: 12px;
+  padding: 2px 6px;
+  background-color: #757ed1;
+  border-radius: 4px;
+  color: white;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.newsletter-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+
+.newsletter-text {
+  color: #939393;
+  margin-bottom: 25px;
+}
+
+.newsletter-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.newsletter-input::placeholder {
+  color: #939393;
+}
+
+.newsletter-button {
+  padding: 12px 30px;
+  background-color: #757ed1;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-button:hover {
+  background-color: #5a64b8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    text-align: left;
+  }
+
+  .social-list {
+    justify-content: left;
+  }
+
+  .input-wrapper {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+
+  .footer-section {
+    text-align: left;
+  }
+}
+</style>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

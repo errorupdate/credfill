@@ -1,0 +1,75 @@
+
+
+.hero-title{
+    text-align: center;
+}
+.data-box{
+    margin-block: 15px 5px;
+}
+.data-box .box-title{
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: justify;
+}
+.data-box .box-text{
+    padding: 5px 20px;
+    color: #fff;
+    text-align: justify;
+}
+.data-box .box-ol, .data-box .box-ul{
+    padding: 5px 40px;
+}
+.data-box .box-ol > li, .data-box .box-ul > li{
+    list-style: initial;
+    color: #fff;
+    text-align: justify;
+    margin : 5px 0;
+}
+.data-box .box-ol > li{
+    list-style: decimal;
+}
+a{
+    display: inline-block;
+}
+.hero-content{
+    position: relative;
+}
+
+.box-table{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+.box-table th, .box-table td{
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+}
+.box-table .box-table-head{
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.box-table th{
+    font-size: 1.5rem;
+}
+.box-table td{
+    font-size: 1.2rem;
+}
+.box-table tr:last-child td{
+    border-bottom: none;
+}
+.box-table tr:nth-child(odd){
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.box-table tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.box-table tr:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+ 
